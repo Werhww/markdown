@@ -20,11 +20,10 @@ lage linjer
 ---
 
 
-legge til tabeller
+| Syntax | Description |
+| --- | ----------- |
+| Header | Title |
+| Paragraph | Text |
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
 
 og mye mer.
