@@ -12,14 +12,18 @@ Hoved grunnen til at jeg bruker markdowns er at det er enkelt for meg seinere å
 
 
 Den andre grunnen er det at jeg kan gjøre mangen forsjkelige ting med markdown-syntaksen som:
-> blackquots på tekst
+> blockquote på tekst
+<br>
 
 lage linjer
 ---
+<br>
 
-legge til liste over gjøremål
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+legge til tabeller
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+<br>
 
 og mye mer.
