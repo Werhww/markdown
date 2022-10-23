@@ -16,14 +16,15 @@ Den andre grunnen er det at jeg kan gjøre mangen forsjkelige ting med markdown-
 <br>
 
 lage linjer
+
 ---
-<br>
+
 
 legge til tabeller
+
 | Syntax      | Description |
 | ----------- | ----------- |
 | Header      | Title       |
 | Paragraph   | Text        |
-<br>
 
 og mye mer.
