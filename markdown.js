@@ -1,9 +1,9 @@
-const markdownElement = document.getElementById('markdowns')
-const markdownList = document.getElementById('list')
+const markdownElement = document.getElementById('markdowns') /// <div> hvor markdown text blir plasert
+const markdownList = document.getElementById('list') /// <div> liste for å navigere mellom til md på siden
 
 async function getFile(){
     
-    const response = await fetch('https://raw.githubusercontent.com/Werhww/markdown/main/markdowns.txt')
+    const response = await fetch('https://raw.githubusercontent.com/<name>/<reponame>/main/<txtfilename>.txt')
     const text = await response.text()
     const markdowns = text.trim().split('\n')
     return markdowns
@@ -14,7 +14,7 @@ async function getMarkdowns(){
     const responses = []
 
     for(var filename of markdowns){
-        const response = await fetch(`https://raw.githubusercontent.com/Werhww/markdown/main/${filename}.md`)
+        const response = await fetch(`https://raw.githubusercontent.com//<name>/<reponame>/main/${filename}.md`)
         const text = await response.text()
         responses.push({
             text:text,
