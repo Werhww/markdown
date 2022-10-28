@@ -3,7 +3,7 @@ const markdownList = document.getElementById('list') /// <div> liste for å navi
 
 async function getFile(){
     
-    const response = await fetch('https://raw.githubusercontent.com/<name>/<reponame>/main/<txtfilename>.txt')
+    const response = await fetch('https://raw.githubusercontent.com/<name>/<reponame>/main/<txtfilename>.txt') /// endre url til filens plassering
     const text = await response.text()
     const markdowns = text.trim().split('\n')
     return markdowns
@@ -14,7 +14,7 @@ async function getMarkdowns(){
     const responses = []
 
     for(var filename of markdowns){
-        const response = await fetch(`https://raw.githubusercontent.com//<name>/<reponame>/main/${filename}.md`)
+        const response = await fetch(`https://raw.githubusercontent.com//<name>/<reponame>/main/${filename}.md`) /// endre url til filens palssering men behold ${filename} delen
         const text = await response.text()
         responses.push({
             text:text,
