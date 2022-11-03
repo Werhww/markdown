@@ -74,8 +74,6 @@
 
     src = '\n' + src + '\n';
 
-    replace(rx_lt, '&lt;');
-    replace(rx_gt, '&gt;');
     replace(rx_space, '  ');
 
     // blockquote
